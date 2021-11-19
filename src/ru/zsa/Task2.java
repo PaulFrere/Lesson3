@@ -32,6 +32,7 @@ public class Task2 {
                     }else{
                         System.out.println("Жизни нет");
                     }
+
                     if (k==n-1 && l != 0 && l != n-1) {
                         if (2 <= (life[k - 1][l - 1] + life[k - 1][l] + life[k - 1][l + 1] + life[k][l - 1] + life[k][l + 1] + life[0][l - 1] + life[0][l] + life[0][l + 1]) || (life[k - 1][l - 1] + life[k - 1][l] + life[k - 1][l + 1] + life[k][l - 1] + life[k][l + 1] + life[0][l - 1] + life[0][l] + life[0][l + 1]) <= 3) {
                             System.out.println("Жизнь есть");
@@ -39,6 +40,7 @@ public class Task2 {
                             System.out.println("Жизни нет");
                         }
                     }
+
                     if(l == 0 && k != 0 && k != n-1){
                         if (2 <= (life[k-1][n-1] + life[k-1][l] + life[k-1][l+1] + life[k][n-1] + life[k][l+1] + life [k+1][n-1] + life[k+1][l] + life[k+1][l+1]) || (life[k-1][n-1] + life[k-1][l] + life[k-1][l+1] + life[k][n-1] + life[k][l+1] + life [k+1][n-1] + life[k+1][l] + life[k+1][l+1])<= 3){
                             System.out.println("Жизнь есть");
@@ -46,6 +48,7 @@ public class Task2 {
                             System.out.println("Жизни нет");
                         }
                     }
+
                     if (l==n-1 && k != 0 && k != n-1) {
                         if (2 <= (life[k-1][l-1] + life[k-1][l] + life[k-1][0] + life[k][l-1] + life[k][0] + life [k+1][l-1] + life[k+1][l] + life[k+1][0]) || (life[k-1][l-1] + life[k-1][l] + life[k-1][0] + life[k][l-1] + life[k][0] + life [k+1][l-1] + life[k+1][l] + life[k+1][0])<= 3){
                             System.out.println("Жизнь есть");
