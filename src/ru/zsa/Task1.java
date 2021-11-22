@@ -9,16 +9,16 @@ public class Task1 {
         int[] array = new int[n];
         int sum = 0;
 
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             array[i] = new Random().nextInt(100);
             sum = sum + array[i];
             System.out.println(array[i]);
         }
         System.out.println("Сумма элементов массива равна " + sum);
 
-        if(sum % 2 == 0){
+        if (sum % 2 == 0) {
             System.out.println("ЧЕТНО");
-        }else {
+        } else {
             System.out.println("НЕЧЕТНО");
         }
     }
